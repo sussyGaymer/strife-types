@@ -1,0 +1,43 @@
+{
+    "name": "strife-types",
+    "version": "0.0.1",
+    "description": "Complete Discord API types for Strife",
+    "main": "build/index.js",
+    "scripts": {
+        "build-dev": "tsc -w",
+        "build": "tsc",
+        "publish-dev": "pnpm build && pnpm publish --registry http://localhost:4873/ --no-git-checks",
+        "publish-prod": "pnpm build && pnpm publish --no-git-checks",
+        "unpublish-dev": "pnpm unpublish --registry http://localhost:4873/ --no-git-checks -f",
+        "lint": "prettier --check . && eslint src --format=pretty",
+        "format": "prettier --write . && eslint src --fix --format=pretty"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sussyGaymer/strife-types.git"
+    },
+    "bugs": {
+        "url": "https://github.com/sussyGaymer/strife-types/issues"
+    },
+    "keywords": [
+        "discord",
+        "discord-api",
+        "discord-types",
+        "discord-api-types",
+        "discord-selfbot"
+    ],
+    "files": [
+        "build"
+    ],
+    "author": "sussyGaymer",
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.54.0",
+        "@typescript-eslint/parser": "^5.54.0",
+        "eslint": "^8.35.0",
+        "eslint-config-prettier": "^8.6.0",
+        "eslint-formatter-pretty": "^4.1.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "prettier": "^2.8.4",
+        "typescript": "^4.9.5"
+    }
+}

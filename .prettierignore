@@ -1,0 +1,6 @@
+node_modules/
+build/
+README.md
+pnpm-lock.yaml
+tsconfig.json
+.eslintrc
