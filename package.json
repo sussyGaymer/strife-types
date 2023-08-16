@@ -6,11 +6,11 @@
     "scripts": {
         "build-dev": "tsc -w",
         "build": "tsc",
-        "publish-dev": "pnpm build && pnpm publish --registry http://localhost:4873/ --no-git-checks",
-        "publish-prod": "pnpm build && pnpm publish --no-git-checks",
-        "unpublish-dev": "pnpm unpublish --registry http://localhost:4873/ --no-git-checks -f",
-        "lint": "prettier --check . && eslint src --format=pretty",
-        "format": "prettier --write . && eslint src --fix --format=pretty"
+        "lint": "eslint . --ext .ts",
+        "lint:fix": "eslint . --ext .ts --fix",
+        "format": "prettier --check .",
+        "format:fix": "prettier --write .",
+        "precommit": "pnpm lint && pnpm format"
     },
     "repository": {
         "type": "git",

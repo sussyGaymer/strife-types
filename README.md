@@ -3,7 +3,7 @@
 >It's still a huge WIP so any and all contributions are well-desired :)
 
 ## Usage
-For now and the forseeable future strife-types and Strife itself will not be published on NPM so it's required for you to download the repository, build it and link it manually using `npm link`. Instructions may or may not be coming soon:tm:.
+The package is not complete yet, therefore usage is illadvised. You can still clone the repo and `npm link` it to your project though. It will be on the NPM registry when finished.
 
 ## Contributing
 Pull requests and issues are more than welcome and won't go ignored (unless you deserve it).

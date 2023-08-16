@@ -1,9 +1,9 @@
-import { DispatchEvents, OpCode } from "../GatewayConstants";
+import { ActionTypes, OpCode } from "../GatewayConstants";
 
 export interface IncomingPayload {
     op: OpCode;
     s: number | null;
-    t: (typeof DispatchEvents)[number] | null;
+    t: (typeof ActionTypes)[number] | null;
     d: unknown | null;
 }
 
