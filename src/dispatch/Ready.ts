@@ -14,7 +14,7 @@ export interface ReadyPayload {
     user: User;
     tutorial: null; // TODO: Figure out the structure
     sessions: UserSession[];
-    session_type: string; // TODO: figure out what else than "normal" it can be
+    session_type: "normal"; // TODO: figure out what else than "normal" it can be
     session_id: string;
     relationships: UserRelationship[];
     read_state: any[]; // TODO: implement this or don't
@@ -27,7 +27,7 @@ export interface ReadyPayload {
     friend_suggestion_count: number;
     experiments: any[]; // TODO: implement this or don't
     country_code: (typeof CountryCodes)[number];
-    constents: {
+    consents: {
         // TODO: find out more
         [key: string]: {
             consented: boolean;

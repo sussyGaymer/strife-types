@@ -10,8 +10,8 @@ Pull requests and issues are more than welcome and won't go ignored (unless you 
 
 ## TODO
 - [ ] Gateway
-    - [X] Opcodes and their payloads (29/29)
-    - [ ] Dispatch events (5/141)
+    - [ ] Opcodes and their payloads (29/35)
+    - [ ] Action types (10/146)
     - [ ] Errors/close codes
 - [ ] HTTP
     - [ ] Endpoints and their payloads
