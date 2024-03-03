@@ -2,7 +2,7 @@
     "name": "strife-types",
     "version": "0.0.1",
     "description": "Complete Discord API types for Strife",
-    "main": "build/index.js",
+    "main": "dist/index.js",
     "scripts": {
         "build:dev": "tsc -p tsconfig.dev.json -w",
         "build": "tsc",
