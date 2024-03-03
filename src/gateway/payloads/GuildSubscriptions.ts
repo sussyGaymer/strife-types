@@ -1,5 +1,5 @@
-import { OpCode } from "../../GatewayConstants";
-import { OutgoingPayload } from "../Payload";
+import { OpCode } from "@Gateway/Constants";
+import { OutgoingPayload } from "@Gateway/Payload";
 
 export interface GuildSubscriptionsPayload extends OutgoingPayload {
     op: OpCode.GUILD_SUBSCRIPTIONS;

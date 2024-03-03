@@ -1,5 +1,5 @@
-import { OpCode, ActionTypes } from "../../GatewayConstants";
-import { IncomingPayload } from "../Payload";
+import { OpCode, ActionTypes } from "@Gateway/Constants";
+import { IncomingPayload } from "@Gateway/Payload";
 
 export interface DispatchPayload extends IncomingPayload {
     op: OpCode.DISPATCH;

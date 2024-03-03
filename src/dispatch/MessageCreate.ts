@@ -1,3 +1,3 @@
-import { Message } from "../channel/Message";
+import { Message } from "@Channel/Message";
 
 export type MessageCreatePayload = Message;

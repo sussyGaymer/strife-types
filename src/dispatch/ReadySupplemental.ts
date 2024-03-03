@@ -1,7 +1,7 @@
-import { DMChannel, GroupDMChannel } from "../channel/Channel";
-import { GuildMember } from "../guild/Member";
-import { VoiceState } from "../voice/VoiceState";
-import { MergedPresences } from "../user/Presence";
+import { DMChannel, GroupDMChannel } from "@Channel";
+import { GuildMember } from "@Guild/Member";
+import { VoiceState } from "@Voice/VoiceState";
+import { MergedPresences } from "@User/Presence";
 
 export interface ReadySupplementalPayload {
     merged_presences: MergedPresences;

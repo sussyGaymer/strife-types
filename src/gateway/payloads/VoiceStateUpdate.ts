@@ -1,6 +1,6 @@
-import { OpCode } from "../../GatewayConstants";
-import { VoiceState } from "../../voice/VoiceState";
-import { OutgoingPayload } from "../Payload";
+import { OpCode } from "@Gateway/Constants";
+import { VoiceState } from "@Voice/VoiceState";
+import { OutgoingPayload } from "@Gateway/Payload";
 
 export interface VoiceStateUpdatePayload extends OutgoingPayload {
     op: OpCode.VOICE_STATE_UPDATE;

@@ -1,4 +1,4 @@
-import { ActionTypes, OpCode } from "../GatewayConstants";
+import { ActionTypes, OpCode } from "@Gateway/Constants";
 
 export interface IncomingPayload {
     op: OpCode;

@@ -1,5 +1,5 @@
-import { OpCode } from "../../GatewayConstants";
-import { OutgoingPayload } from "../Payload";
+import { OpCode } from "@Gateway/Constants";
+import { OutgoingPayload } from "@Gateway/Payload";
 
 export interface RequestForumUnreadsPayload extends OutgoingPayload {
     op: OpCode.REQUEST_FORUM_UNREADS;

@@ -1,4 +1,4 @@
-import { GuildMember } from "../guild/Member";
+import { GuildMember } from "@Guild/Member";
 
 // TODO: some of this can be null or undefined, type it properly
 export interface VoiceState {

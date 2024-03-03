@@ -1,6 +1,6 @@
-import { NitroTypes } from "./Nitro";
-import { Activity } from "./Presence";
-import { RelationshipType } from "./Relationship";
+import { NitroTypes } from "@User/Nitro";
+import { Activity } from "@User/Presence";
+import { RelationshipType } from "@User/Relationship";
 
 export interface User {
     id: string;

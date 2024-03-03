@@ -1,19 +1,12 @@
-import { GuildFeatures, GuildNSFWLevel, GuildPremiumTier } from "./Properties";
-import { GuildExplicitContentFilterLevel, GuildMessageNotifications, GuildMFALevel, GuildVerificationLevel } from "./Settings";
-import { SlashCommandType } from "../interactions/Commands";
-import { LocaleCodes } from "../user/Locale";
-import {
-    GuildAnnouncementChannel,
-    GuildCategoryChannel,
-    GuildForumChannel,
-    GuildStageChannel,
-    GuildTextChannel,
-    GuildVoiceChannel,
-} from "../channel/Channel";
-import { Emoji } from "./Emoji";
-import { Sticker } from "./Media";
-import { GuildMember } from "./Member";
-import { Role } from "./Role";
+import { GuildFeatures, GuildNSFWLevel, GuildPremiumTier } from "@Guild/Properties";
+import { GuildExplicitContentFilterLevel, GuildMessageNotifications, GuildMFALevel, GuildVerificationLevel } from "@Guild/Settings";
+import { SlashCommandType } from "@Interactions/Commands";
+import { LocaleCodes } from "@User/Locale";
+import { GuildAnnouncementChannel, GuildCategoryChannel, GuildForumChannel, GuildStageChannel, GuildTextChannel, GuildVoiceChannel } from "@Channel";
+import { Emoji } from "@Guild/Emoji";
+import { Sticker } from "@Guild/Media";
+import { GuildMember } from "@Guild/Member";
+import { Role } from "@Guild/Role";
 
 export interface GuildProperties {
     default_message_notifications: GuildMessageNotifications;

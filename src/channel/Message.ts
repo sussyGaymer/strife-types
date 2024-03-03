@@ -1,5 +1,5 @@
-import { GuildMember } from "../guild/Member";
-import { User } from "../user/User";
+import { GuildMember } from "@Guild/Member";
+import { User } from "@User";
 
 export enum MessageType {
     DEFAULT,

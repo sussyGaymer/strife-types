@@ -1,6 +1,6 @@
-import { OpCode } from "../../GatewayConstants";
-import { Presence } from "../../user/Presence";
-import { OutgoingPayload } from "../Payload";
+import { OpCode } from "@Gateway/Constants";
+import { Presence } from "@User/Presence";
+import { OutgoingPayload } from "@Gateway/Payload";
 
 export interface PresenceUpdatePayload extends OutgoingPayload {
     op: OpCode.PRESENCE_UPDATE;

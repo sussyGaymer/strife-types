@@ -1,5 +1,5 @@
-import { OpCode } from "../../GatewayConstants";
-import { IncomingPayload } from "../Payload";
+import { OpCode } from "@Gateway/Constants";
+import { IncomingPayload } from "@Gateway/Payload";
 
 export interface HelloPayload extends IncomingPayload {
     op: OpCode.HELLO;

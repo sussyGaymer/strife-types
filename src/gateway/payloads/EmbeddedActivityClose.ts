@@ -1,5 +1,5 @@
-import { OpCode } from "../../GatewayConstants";
-import { OutgoingPayload } from "../Payload";
+import { OpCode } from "@Gateway/Constants";
+import { OutgoingPayload } from "@Gateway/Payload";
 
 export interface EmbeddedActivityClosePayload extends OutgoingPayload {
     op: OpCode.EMBEDDED_ACTIVITY_CLOSE;

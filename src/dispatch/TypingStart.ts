@@ -1,4 +1,4 @@
-import { GuildMember } from "../guild/Member";
+import { GuildMember } from "@Guild/Member";
 
 export interface TypingStartPayload {
     user_id: string;

@@ -1,4 +1,4 @@
-import { User } from "../user/User";
+import { User } from "@User";
 
 export interface ActivityUserActionPayload {
     action_type: string; // TODO: verify type

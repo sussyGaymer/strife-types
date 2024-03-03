@@ -1,7 +1,7 @@
-import { OpCode } from "../../GatewayConstants";
-import { LocaleCodes } from "../../user/Locale";
-import { Presence } from "../../user/Presence";
-import { OutgoingPayload } from "../Payload";
+import { OpCode } from "@Gateway/Constants";
+import { LocaleCodes } from "@User/Locale";
+import { Presence } from "@User/Presence";
+import { OutgoingPayload } from "@Gateway/Payload";
 
 export interface IdentifyPayload extends OutgoingPayload {
     op: OpCode.IDENTIFY;

@@ -1,5 +1,5 @@
-import { OpCode } from "../../GatewayConstants";
-import { OutgoingPayload } from "../Payload";
+import { OpCode } from "@Gateway/Constants";
+import { OutgoingPayload } from "@Gateway/Payload";
 
 export interface RequestGuildMembersPayload extends OutgoingPayload {
     op: OpCode.REQUEST_GUILD_MEMBERS;

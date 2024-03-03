@@ -1,10 +1,10 @@
-import { CountryCodes } from "../user/Locale";
-import { DMChannel, GroupDMChannel } from "../channel/Channel";
-import { Guild } from "../guild/Guild";
-import { GuildMember } from "../guild/Member";
-import { GuildSetting } from "../guild/Settings";
-import { User, UserSession, UserRelationship } from "../user/User";
-import { UserConnection } from "../user/Connections";
+import { CountryCodes } from "@User/Locale";
+import { DMChannel, GroupDMChannel } from "@Channel";
+import { Guild } from "@Guild";
+import { GuildMember } from "@Guild/Member";
+import { GuildSetting } from "@Guild/Settings";
+import { User, UserSession, UserRelationship } from "@User";
+import { UserConnection } from "@User/Connections";
 
 export interface ReadyPayload {
     v: number;

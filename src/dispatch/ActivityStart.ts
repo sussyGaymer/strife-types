@@ -1,4 +1,4 @@
-import { Activity } from "../user/Presence";
+import { Activity } from "@User/Presence";
 
 export interface ActivityStartPayload {
     user_id: string;
