@@ -1,11 +1,11 @@
 export * from "@Channel";
 export * from "@Channel/Message";
 
-export * from "@Dispatch/ActivityStart";
-export * from "@Dispatch/ActivityUserAction";
-export * from "@Dispatch/Ready";
-export * from "@Dispatch/ReadySupplemental";
-export * from "@Dispatch/TypingStart";
+export * from "@Dispatch/payloads/ActivityStart";
+export * from "@Dispatch/payloads/ActivityUserAction";
+export * from "@Dispatch/payloads/Ready";
+export * from "@Dispatch/payloads/ReadySupplemental";
+export * from "@Dispatch/payloads/TypingStart";
 
 export * from "@Gateway/Constants";
 export * from "@Gateway/Payload";
