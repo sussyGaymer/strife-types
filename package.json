@@ -4,7 +4,7 @@
     "description": "Complete Discord API types for Strife",
     "main": "build/index.js",
     "scripts": {
-        "build-dev": "tsc -w",
+        "build:dev": "tsc -p tsconfig.dev.json -w",
         "build": "tsc",
         "lint": "eslint . --ext .ts",
         "lint:fix": "eslint . --ext .ts --fix",
@@ -27,17 +27,19 @@
         "discord-selfbot"
     ],
     "files": [
-        "build"
+        "build",
+        "package.json",
+        "README.md"
     ],
     "author": "sussyGaymer",
     "devDependencies": {
-        "@typescript-eslint/eslint-plugin": "^5.54.0",
-        "@typescript-eslint/parser": "^5.54.0",
-        "eslint": "^8.35.0",
-        "eslint-config-prettier": "^8.6.0",
-        "eslint-formatter-pretty": "^4.1.0",
-        "eslint-plugin-prettier": "^4.2.1",
-        "prettier": "^2.8.4",
-        "typescript": "^4.9.5"
+        "@typescript-eslint/eslint-plugin": "^7.1.0",
+        "@typescript-eslint/parser": "^7.1.0",
+        "eslint": "^8.57.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-formatter-pretty": "^6.0.1",
+        "eslint-plugin-prettier": "^5.1.3",
+        "prettier": "^3.2.5",
+        "typescript": "^5.3.3"
     }
 }

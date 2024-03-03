@@ -1,0 +1,7 @@
+// includes sourcemaps for debugging
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "sourceMap": true
+    }
+}

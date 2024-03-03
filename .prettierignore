@@ -1,6 +1,5 @@
 node_modules/
-build/
-README.md
+dist/
 pnpm-lock.yaml
 tsconfig.json
 .eslintrc
