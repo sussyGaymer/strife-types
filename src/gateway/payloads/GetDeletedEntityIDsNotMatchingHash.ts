@@ -1,8 +1,7 @@
 import { OpCode } from "../../GatewayConstants";
 import { OutgoingPayload } from "../Payload";
 
-export interface GetDeletedEntityIDsNotMatchingHashPayload
-    extends OutgoingPayload {
+export interface GetDeletedEntityIDsNotMatchingHashPayload extends OutgoingPayload {
     op: OpCode.GET_DELETED_ENTITY_IDS_NOT_MATCHING_HASH;
     d: {
         // TODO: Verify types

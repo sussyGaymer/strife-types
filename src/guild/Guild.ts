@@ -1,10 +1,5 @@
 import { GuildFeatures, GuildNSFWLevel, GuildPremiumTier } from "./Properties";
-import {
-    GuildExplicitContentFilterLevel,
-    GuildMessageNotifications,
-    GuildMFALevel,
-    GuildVerificationLevel,
-} from "./Settings";
+import { GuildExplicitContentFilterLevel, GuildMessageNotifications, GuildMFALevel, GuildVerificationLevel } from "./Settings";
 import { SlashCommandType } from "../interactions/Commands";
 import { LocaleCodes } from "../user/Locale";
 import {
@@ -72,14 +67,7 @@ export interface Guild {
     guild_scheduled_events: any[]; // TODO: type
     emojis: Emoji[];
     data_mode: "full" | "partial";
-    channels: (
-        | GuildTextChannel
-        | GuildVoiceChannel
-        | GuildCategoryChannel
-        | GuildAnnouncementChannel
-        | GuildStageChannel
-        | GuildForumChannel
-    )[];
+    channels: (GuildTextChannel | GuildVoiceChannel | GuildCategoryChannel | GuildAnnouncementChannel | GuildStageChannel | GuildForumChannel)[];
     application_command_counts: {
         [SlashCommandType.CHAT_INPUT]?: number;
         [SlashCommandType.USER]?: number;
