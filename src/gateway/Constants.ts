@@ -13,8 +13,11 @@ export enum OpCode {
     HEARTBEAT_ACK,
     /**
      * This OP code has been removed from the Discord API.
+     * It was named SYNC_GUILDS and has been a part of the Discord API from since at least Dec. 20 2016.
+     * The payload type was string[]
+     * It was finally removed around Nov. 14th 2017.
      */
-    SYNC_GUILDS,
+    _,
     CALL_CONNECT,
     GUILD_SUBSCRIPTIONS,
     LOBBY_CONNECT,
@@ -26,10 +29,16 @@ export enum OpCode {
     STREAM_PING,
     STREAM_SET_PAUSED,
     /**
-     * DO NOT USE!!!!
-     * This OP code's purpose is unknown.
+     * This OP code has been removed from the Discord API.
+     * It was repurposed once.
+     * Initially it was added arond Jul. 24th 2019 and named LFG_SUBSCRIPTIONS_UPDATE.
+     * At that time the payload type was { guild_id: string; subscribed_channel_ids: string[] }
+     * Between Sep. 1st and Sep. 10th 2019 it was renamed to LFG_SUBSCRIPTIONS_FLUSH.
+     * The payload type was also changed to { subscriptions: { **type unknown** }[] }
+     * It was possibly related to OP 14 (named GUILD_SUBSCRIPTIONS_FLUSH at the time)
+     * It was finally removed around Oct. 31st 2019
      */
-    _,
+    __,
     REQUEST_GUILD_APPLICATION_COMMANDS,
     EMBEDDED_ACTIVITY_LAUNCH,
     EMBEDDED_ACTIVITY_CLOSE,
