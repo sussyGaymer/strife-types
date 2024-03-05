@@ -1,27 +1,27 @@
 export enum GuildMessageNotifications {
-    ALL_MESSAGES = 0,
-    ONLY_MENTIONS = 1,
-    NO_MESSAGES = 2,
-    NULL = 3,
+    ALL_MESSAGES,
+    ONLY_MENTIONS,
+    NO_MESSAGES,
+    NULL,
 }
 
 export enum GuildMFALevel {
-    NONE = 0,
-    ELEVATED = 1,
+    NONE,
+    ELEVATED,
 }
 
 export enum GuildVerificationLevel {
-    NONE = 0,
-    LOW = 1,
-    MEDIUM = 2,
-    HIGH = 3,
-    VERY_HIGH = 4,
+    NONE,
+    LOW,
+    MEDIUM,
+    HIGH,
+    VERY_HIGH,
 }
 
 export enum GuildExplicitContentFilterLevel {
-    DISABLED = 0,
-    MEMBERS_WITHOUT_ROLES = 1,
-    ALL_MEMBERS = 2,
+    DISABLED,
+    MEMBERS_WITHOUT_ROLES,
+    ALL_MEMBERS,
 }
 
 export interface GuildChannelOverride {

@@ -1,12 +1,12 @@
 import { User } from "@User";
 
 export enum ActivityType {
-    PLAYING = 0,
-    STREAMING = 1,
-    LISTENING = 2,
-    WATCHING = 3,
-    CUSTOM_STATUS = 4,
-    COMPETING = 5,
+    PLAYING,
+    STREAMING,
+    LISTENING,
+    WATCHING,
+    CUSTOM_STATUS,
+    COMPETING,
 }
 
 export interface ActivityTimestamp {

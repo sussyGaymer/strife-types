@@ -1,11 +1,11 @@
 export enum UserConnectionVisibility {
-    HIDDEN = 0,
-    VISIBLE = 1,
+    HIDDEN,
+    VISIBLE,
 }
 
 export enum UserConnectionMetadataVisibility {
-    HIDDEN = 0,
-    VISIBLE = 1,
+    HIDDEN,
+    VISIBLE,
 }
 
 export interface UserConnection {

@@ -1,36 +1,48 @@
 import { User } from "@User";
 
 export enum ChannelType {
-    GUILD_TEXT = 0,
-    DM = 1,
-    GUILD_VOICE = 2,
-    GROUP_DM = 3,
-    GUILD_CATEGORY = 4,
-    GUILD_ANNOUNCEMENT = 5,
-    GUILD_STORE = 6,
-    ANNOUNCEMENT_THREAD = 10,
-    PUBLIC_THREAD = 11,
-    PRIVATE_THREAD = 12,
-    GUILD_STAGE_VOICE = 13,
-    GUILD_DIRECTORY = 14,
-    GUILD_FORUM = 15,
+    GUILD_TEXT,
+    DM,
+    GUILD_VOICE,
+    GROUP_DM,
+    GUILD_CATEGORY,
+    GUILD_ANNOUNCEMENT,
+    GUILD_STORE,
+    /**
+     * NOTE: This channel type has been removed from the Discord API (GUILD_LFG_LISTINGS)
+     */
+    _,
+    /**
+     * NOTE: This channel type has been removed from the Discord API (LFG_GROUP_DM)
+     */
+    __,
+    /**
+     * NOTE: This channel type has been removed from the Discord API (THREAD)
+     */
+    ___,
+    ANNOUNCEMENT_THREAD,
+    PUBLIC_THREAD,
+    PRIVATE_THREAD,
+    GUILD_STAGE_VOICE,
+    GUILD_DIRECTORY,
+    GUILD_FORUM,
     UNKNOWN = 10000,
 }
 
 export enum OverwriteType {
-    ROLE = 0,
-    MEMBER = 1,
+    ROLE,
+    MEMBER,
 }
 
 export enum ForumChannelSortOrder {
-    LATEST_ACTIVITY = 0,
-    CREATION_DATE = 1,
+    LATEST_ACTIVITY,
+    CREATION_DATE,
 }
 
 export enum ForumChannelLayoutType {
-    NOT_SET = 0,
-    LIST_VIEW = 1,
-    GALLERY_VIEW = 2,
+    NOT_SET,
+    LIST_VIEW,
+    GALLERY_VIEW,
 }
 
 export interface GuildForumChannelTag {

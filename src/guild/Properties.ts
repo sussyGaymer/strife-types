@@ -55,15 +55,15 @@ export const GuildFeatures = [
 ] as const;
 
 export enum GuildPremiumTier {
-    NONE = 0,
-    TIER_1 = 1,
-    TIER_2 = 2,
-    TIER_3 = 3,
+    NONE,
+    TIER_1,
+    TIER_2,
+    TIER_3,
 }
 
 export enum GuildNSFWLevel {
-    DEFAULT = 0,
-    EXPLICIT = 1,
-    SAFE = 2,
-    AGE_RESTRICTED = 3,
+    DEFAULT,
+    EXPLICIT,
+    SAFE,
+    AGE_RESTRICTED,
 }
